@@ -1,25 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import NavbarMain from './compnents/NavbarMain'
+import MainCard from './compnents/MainCard'
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <>
+    <NavbarMain/>
+    <h1>GMC AFRICA</h1>
+    <div className='main-div'>
+    <MainCard src='https://shorturl.at/ruAP2' title='front-end'/>
+    <MainCard src='https://shorturl.at/S0179' title='back-end'/>
+    <MainCard src='https://shorturl.at/bzL19' title='full-stack'/>
     </div>
-  );
+    
+    </>
+  )
 }
 
-export default App;
+export default App
